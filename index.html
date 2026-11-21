@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="A JavaScript project demonstrating array methods with product inventory."
+    />
+
+    <title>Product Inventory | Week 11</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript -->
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <a href="#" class="logo">
+          <span class="logo-icon">P</span>
+          <span>Product<span class="logo-highlight">Flow</span></span>
+        </a>
+
+        <span class="project-label">WEEK 11 PROJECT</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">JAVASCRIPT ARRAY METHODS</span>
+
+          <h1>Product Inventory</h1>
+
+          <p>
+            A simple inventory dashboard demonstrating filter(), map(),
+            reduce(), and method chaining.
+          </p>
+
+          <div class="hero-tags">
+            <span>JavaScript</span>
+            <span>Array Methods</span>
+            <span>Objects</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+      <section class="stats-grid">
+        <article class="stat-card">
+          <div class="stat-icon purple">P</div>
+          <p>Total Products</p>
+          <h2 id="totalProducts">0</h2>
+          <span>Products in inventory</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon green">✓</div>
+          <p>Available Products</p>
+          <h2 id="availableProducts">0</h2>
+          <span>Currently in stock</span>
+        </article>
+
+        <article class="stat-card">
+          <div class="stat-icon blue">$</div>
+          <p>Inventory Value</p>
+          <h2 id="inventoryValue">$0</h2>
+          <span>Value of available products</span>
+        </article>
+      </section>
+
+      <!-- Products Section -->
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <span class="section-subtitle">INVENTORY LIST</span>
+            <h2>All Products</h2>
+          </div>
+
+          <span class="product-count" id="productCount"> 0 Products </span>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Availability</th>
+              </tr>
+            </thead>
+
+            <tbody id="productList">
+              <!-- Products are added with JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Analysis Section -->
+      <section class="analysis-grid">
+        <article class="analysis-card">
+          <span class="section-subtitle">AVAILABLE ITEMS</span>
+          <h2>Products in Stock</h2>
+
+          <ul id="availableList" class="available-list">
+            <!-- Available product names -->
+          </ul>
+        </article>
+
+        <article class="analysis-card cheapest-card">
+          <span class="section-subtitle">BEST PRICE</span>
+          <h2>Cheapest Available Product</h2>
+
+          <div id="cheapestProduct" class="cheapest-result">
+            <!-- Cheapest product -->
+          </div>
+        </article>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Week 12 JavaScript Homework</p>
+        <p>Built with HTML, CSS and JavaScript</p>
+      </footer>
+    </main>
+  </body>
+</html>
